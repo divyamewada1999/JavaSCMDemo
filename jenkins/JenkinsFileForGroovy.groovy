@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script{
                     modules.first = load "hello.groovy"
-                    modules.first.test1()
+                    modules.first.greetMsg()
                 }
             }
         }
