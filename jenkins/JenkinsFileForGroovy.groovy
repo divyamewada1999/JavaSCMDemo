@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
                 script{
-                    modules.first = load "../jenkins/hello.groovy"
+                    modules.first = load "../hello.groovy"
                     modules.first.greetMsg()
                 }
             }
